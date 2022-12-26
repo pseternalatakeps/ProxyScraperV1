@@ -1,10 +1,8 @@
-# Proxy scraper and checker 
+# Proxy Scraper & Checker [V1]
 
-[![Tests](https://github.com/iw4p/proxy-scraper/actions/workflows/tests.yml/badge.svg)](https://github.com/iw4p/proxy-scraper/actions/workflows/tests.yml)
+Allows you to scrape more than **1K HTTP proxies in under 2 minutes**.
 
-Scrape more than 1K HTTP proxies in less than 2 seconds.
-
-Scraping fresh public proxies from different sources:
+**Fresh public proxies** are scraped from these sources:
 
 * [sslproxies.org](http://sslproxies.org) (HTTP, HTTPS)
 * [free-proxy-list.net](http://free-proxy-list.net) (HTTP, HTTPS)
@@ -24,7 +22,7 @@ pip3 install -r requirements.txt
 
 ## Usage
 
-For scraping:
+**For scraping:**
 
 ```bash
 python3 proxyScraper.py -p http
@@ -34,7 +32,7 @@ python3 proxyScraper.py -p http
 * With `-v` or `--verbose`, more details.
 * With `-h` or `--help`, Show help to who did't read this README.
 
-For checking:
+**For checking:**
 
 ```bash
 python3 proxyChecker.py -t 20 -s google.com -l output.txt
@@ -49,22 +47,11 @@ python3 proxyChecker.py -t 20 -s google.com -l output.txt
 * With `-h` or `--help`, Show help to who did't read this README.
 
 ## Good to know
-* Dead proxies will be removed and just alive proxies will stay.
-* This script is also able to scrape Socks, but proxyChecker only check HTTP(S) proxies.
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=iw4p/proxy-scraper&type=Date)](https://star-history.com/#iw4p/proxy-scraper&Date)
+* Dead proxies will be **automatically** removed.
+* This specific script is able to scrape socks proxies but the checker can **only check HTTP(S) proxies**.
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are allowed. You are welcome to discuss major changes to this project by opening an issue.
 
 ### Issues
-Feel free to submit issues and enhancement requests or contact me via [vida.page/nima](https://vida.page/nima).
-
-## Credit
-* [Proxy Scraper](https://github.com/Abigdog4/ProxyScrapper)
-* [Proxy Checker](https://github.com/byRo0t96/proxy_checker)
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+Submit issues and enhancement requests by opening an issue.
