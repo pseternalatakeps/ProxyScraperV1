@@ -63,8 +63,8 @@ def check(file, timeout, method, site, verbose, random_user_agent):
             new_user_agent = random.choice(user_agents)
         valid, time_taken, error = proxy.check(site, timeout, new_user_agent)
         message = {
-            True: f"{proxy} is valid, took {time_taken} seconds",
-            False: f"{proxy} is invalid: {repr(error)}",
+            True: f"\u001b[1m\u001b[32m{proxy} \u001b[37mis \u001b[36mvalid\u001b[37m, took \u001b[32m{time_taken} \u001b[37mseconds",
+            False: f"\u001b[1m\u001b[32m{proxy} \u001b[37mis \u001b[31minvalid\u001b[37m: \u001b[31m{repr(error)}",
         }[valid]
         verbose_print(verbose, message)
         valid_proxies.extend([proxy] if valid else [])
