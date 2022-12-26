@@ -12,6 +12,17 @@ Allows you to scrape more than **1K HTTP proxies in under 2 minutes**.
 * [proxy-list.download](https://www.proxy-list.download) (HTTP, HTTPS, Socks4, Socks5)
 
 ## Installation
+Use these commands to ensure you have the default requirements.
+```bash
+sudo apt install git -y
+sudo apt install python -y
+sudo apt install python3 -y
+```
+
+Use this command to download this repository.
+```bash
+git clone https://github.com/pseternalatakeps/ProxyScraperV1.git
+```
 
 Use this command to install dependencies.
 
