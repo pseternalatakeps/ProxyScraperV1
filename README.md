@@ -25,7 +25,7 @@ pip3 install -r requirements.txt
 **For scraping:**
 
 ```bash
-python3 proxyScraper.py -p http
+python3 scraper.py -p http
 ```
 * With `-p` or `--proxy`, You can choose your proxy type. Supported proxy types are: **HTTP - HTTPS - Socks (Both 4 and 5) - Socks4 - Socks5** 
 * With `-o` or `--output`, create and write to a .txt file. (Default is **output.txt**)
@@ -35,7 +35,7 @@ python3 proxyScraper.py -p http
 **For checking:**
 
 ```bash
-python3 proxyChecker.py -t 20 -s google.com -l output.txt
+python3 checker.py -t 20 -s google.com -l output.txt
 ```
 
 * With `-t` or `--timeout`, dismiss the proxy after -t seconds (Default is **20**)
